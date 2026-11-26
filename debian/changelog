@@ -1,0 +1,5 @@
+python-tenacity (9.1.2-1) UNRELEASED; urgency=medium
+
+  * Initial Debian packaging of Tenacity 9.1.2.
+
+ -- Vítězslav Dvořák <info@vitexsoftware.cz>  Thu, 26 Nov 2026 17:00:00 +0100

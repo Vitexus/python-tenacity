@@ -1,0 +1,27 @@
+Source: python-tenacity
+Section: python
+Priority: optional
+Maintainer: Vítězslav Dvořák <info@vitexsoftware.cz>
+Build-Depends:
+ debhelper-compat (= 13),
+ dh-python,
+ pybuild-plugin-pyproject,
+ python3-all,
+ python3-setuptools,
+ python3-setuptools-scm,
+Standards-Version: 4.7.0
+Homepage: https://github.com/jd/tenacity
+Vcs-Git: https://github.com/Vitexus/python-tenacity.git
+Vcs-Browser: https://github.com/Vitexus/python-tenacity
+Rules-Requires-Root: no
+
+Package: python3-tenacity
+Architecture: all
+Depends:
+ ${misc:Depends},
+ ${python3:Depends},
+Description: General-purpose retrying library for Python
+ Tenacity simplifies retry behavior with configurable stopping, waiting and
+ retry predicates. It supports synchronous and asynchronous Python code.
+ .
+ This package provides the Python 3 library.
