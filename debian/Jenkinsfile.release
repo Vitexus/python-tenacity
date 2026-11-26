@@ -166,7 +166,7 @@ properties([
 ])
 
 def scmVars = [:]
-node('arm64') {
+node('amd64') {
     ansiColor('xterm') {
         stage('SCM Checkout') {
             // Run the one github.com checkout of this build on node-local disk,
@@ -196,7 +196,7 @@ distributions.each { distro ->
         def artifacts = []
         def buildVer = ''
 
-        node('arm64') {
+        node('amd64') {
             ansiColor('xterm') {
                 def root = nodeLocalRoot()
                 def buildId = localBuildId(distroCode)
