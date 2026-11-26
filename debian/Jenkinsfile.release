@@ -1,6 +1,6 @@
 #!groovy
 
-String[] distributions = ['debian:trixie', 'ubuntu:resolute']
+String[] distributions = ['debian:trixie']
 
 String vendor = 'vitexsoftware'
 String imagePrefix = 'multiflexi-'
