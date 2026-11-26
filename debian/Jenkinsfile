@@ -164,6 +164,7 @@ def localBuildTreeRelease(Map t) {
 
 properties([
     copyArtifactPermission('*'),
+    pipelineTriggers([githubPush()]),
     buildBlocker(
         useBuildBlocker: true,
         blockLevel: 'GLOBAL',
